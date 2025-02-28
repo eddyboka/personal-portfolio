@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/medium-screens.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Portfolio | Edward Addo Boakye</title>
   </head>
@@ -19,8 +20,8 @@
       <span><a href="#professional-summary">PROFESSIONAL SUMMARY</a></span>
       <span><a href="#experiences">EXPERIENCES</a></span>
       <span><a href="#proj-heading">PROJECT GALLERY</a></span>
-      <span><a href="#">CONTACT ME</a></span>
-      <span><a href="#">RESUME</a></span>
+      <span><a href="#contact">CONTACT ME</a></span>
+      <span><a href="#resume">RESUME</a></span>
   
     </div>
     </div>
@@ -33,13 +34,13 @@
           <p>HTML | CSS | JAVASCRIPT | NODE JS | GIT | EXPRESS | MONGO DB</p>
           <div class="buttons-01">
             <a href="#proj-heading"><button>PROJECTS</button></a>
-            <a href="./documents/Edward Addo Boakye CV.pdf"><button>RESUME</button></a>
-            <a href="#"><button>CERTIFICATES</button></a>
+            <a href="./documents/Edward Addo Boakye CV.pdf"><button id="resume">RESUME</button></a>
+            <a href="./documents/BSC COMP SCIENCE CERT.pdf"><button>CERTIFICATES</button></a>
             
           </div>
           <div class="socials">
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-instagram"></a>
+            <a href="https://www.facebook.com/share/15noWVptNi/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/edwardaddoboakye?igsh=ZWR4ajk5eG55NTZi" class="fa fa-instagram"></a>
             <a href="https://x.com/eboakye151" class="fa fa-twitter"></a>
             <a href="https://www.linkedin.com/in/edward-addo-boakye1101/" class="fa fa-linkedin"></a>
           </div>
@@ -147,12 +148,13 @@
           <div class="flip-card">
               <div class="flip-card-inner">
                   <div class="flip-card-front">
-                      <img src="./image/Adoba Farms Website.png" alt="HTML Logo">
+                      <img src="./image/Adoba Farms Website.png" alt="Adoba Farms">
                   </div>
                   <div class="flip-card-back">
                       <h3>Adoba Farms Website</h3>
                       <p>This is a farm website developed by Edward Addo Boakye. It is a part of his maiden projects right after receiving 4 weeks of training from MEST Africa</p>
-                      <button>Learn More</button>
+                      <a href="https://adobafarms.netlify.app/" target="_blank"><button>View More</button></a>
+
                   </div>
               </div>
           </div>
@@ -160,12 +162,12 @@
           <div class="flip-card">
               <div class="flip-card-inner">
                   <div class="flip-card-front">
-                      <img src="./image/Adoba Photography Website.png" alt="CSS Logo">
+                      <img src="./image/Adoba Photography Website.png" alt="Adoba Photography">
                   </div>
                   <div class="flip-card-back">
                       <h3>Adoba Photography</h3>
                       <p>This ia a photography website. Its significance is to empower african photographers to be persistent and creative in their chosen field</p>
-                      <button>Learn More</button>
+                      <a href="https://adobaphotography.netlify.app/" target="_blank"><button>View More</button></a>
                   </div>
               </div>
           </div>
@@ -173,12 +175,12 @@
           <div class="flip-card">
               <div class="flip-card-inner">
                   <div class="flip-card-front">
-                      <img src="./image/Edward's To-Do Website.png" alt="JavaScript Logo">
+                      <img src="./image/Edward's To-Do Website.png" alt="To do website">
                   </div>
                   <div class="flip-card-back">
                       <h3>To-do list</h3>
                       <p>A to-do list web app which allows you to add daily activities to be undertaken and remove them as soon as they are completed.</p>
-                      <button>Learn More</button>
+                      <a href="https://eddystodo-app.netlify.app/" target="_blank"><button>View More</button></a>
                   </div>
               </div>
           </div>
@@ -186,12 +188,12 @@
           <div class="flip-card">
               <div class="flip-card-inner">
                   <div class="flip-card-front">
-                      <img src="./image/Adoba Portfolio Website.png" alt="Python Logo">
+                      <img src="./image/Adoba Portfolio Website.png" alt="Portfolio Website">
                   </div>
                   <div class="flip-card-back">
                       <h3>Portfolio</h3>
                       <p>This is my portfolio website. Here, I showcase my personal web projects and helpful tips to aid beginners in the field of web development to gain inspiration and knowledge.</p>
-                      <button>Learn More</button>
+                      <a href="https://edwardaddoboakye.netlify.app/" target="_blank"><button>View More</button></a>
                   </div>
               </div>
           </div>
@@ -250,7 +252,7 @@
     <section class="container-04">
       
       <div class="contact-me">
-        <h1>Contact Me</h1>
+        <h1 id="contact">Contact Me</h1>
         <form class="contact-me-form">
           <input type="text" placeholder="Enter your full name" name="fullname" id="fullname" required>
           <input type="email" placeholder="Enter your email" name="email" id="email" required>
@@ -262,8 +264,34 @@
       </div>
        
     </section>
-    <section>
+    <section class="container-05">
+      <div class="home-address">
+        <h1>My Address</h1>
+        <p>U123, Akushie Cl. Abavana Down,
+          Kotobabi, Greater-Accra, Ghana</p>
+      </div>
+      <div class="useful-links">
+      <h1>Useful links</h1>
+      <span><a href="#professional-summary">PROFESSIONAL SUMMARY</a></span>
+      <span><a href="#experiences">EXPERIENCES</a></span>
+      <span><a href="#proj-heading">PROJECT GALLERY</a></span>
+      <span><a href="#contact">CONTACT ME</a></span>
+      <span><a href="#resume">RESUME</a></span>
+      <span><a href="./documents/BSC COMP SCIENCE CERT.pdf">CERTIFICATE</a></span>
+      </div>
+      <div class="socials-below">
+        <h1>Follow me</h1>
+        <div>
+          <a href="https://www.facebook.com/share/15noWVptNi/" class="fa fa-facebook"></a>
+          <a href="https://www.instagram.com/edwardaddoboakye?igsh=ZWR4ajk5eG55NTZi" class="fa fa-instagram"></a>
+          <a href="https://x.com/eboakye151" class="fa fa-twitter"></a>
+          <a href="https://www.linkedin.com/in/edward-addo-boakye1101/" class="fa fa-linkedin"></a>
+        </div>
+        </div>
       
     </section>
+    <footer class="foot-section">
+      <p>Copyright &copy; 2025 All rights reserved. This website was designed by Edward Addo Boakye.</p>
+    </footer>
   </body>
 </html>
