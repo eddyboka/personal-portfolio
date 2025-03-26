@@ -5,55 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/medium-screens.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Portfolio | Edward Addo Boakye</title>
+
+    <script>
+      function toggleMenu() {
+        var x = document.getElementById("myNavlinks");
+        if (x.style.display === "flex") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "flex";
+        }
+      }
+
+      // Close menu when a link is clicked (for mobile)
+      document.querySelectorAll(".navlinks a").forEach((link) => {
+        link.addEventListener("click", () => {
+          if (window.innerWidth <= 768) {
+            document.getElementById("myNavlinks").style.display = "none";
+          }
+        });
+      });
+    </script>
   </head>
   <body>
     <nav class="nav-container">
-
       <div class="logo">
         <span><p>EDWARD ADDO BOAKYE</p></span>
-        </div>
-      
+      </div>
+
       <div class="navlinks">
-      <span><a href="/index.html">HOME</a></span>
-      <span><a href="#professional-summary">PROFESSIONAL SUMMARY</a></span>
-      <span><a href="#experiences">EXPERIENCES</a></span>
-      <span><a href="#proj-heading">PROJECT GALLERY</a></span>
-      <span><a href="#contact">CONTACT ME</a></span>
-      <span><a href="./documents/Edward Addo Boakye CV.pdf">RESUME</a></span>
-  
-    </div>
-    </div>
+        <span><a href="/index.html">HOME</a></span>
+        <span><a href="#professional-summary">PROFESSIONAL SUMMARY</a></span>
+        <span><a href="#experiences">EXPERIENCES</a></span>
+        <span><a href="#proj-heading">PROJECT GALLERY</a></span>
+        <span><a href="#contact">CONTACT ME</a></span>
+        <span><a href="./documents/Edward Addo Boakye CV.pdf">RESUME</a></span>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
     <section class="container-01">
       <!-- hero section -->
       <div class="hero-overlay">
-          <h1>Edward Addo Boakye</h1>
-          <h2>Web Developer in Accra, Ghana</h2>
-          <p>HTML | CSS | JAVASCRIPT | NODE JS | GIT | EXPRESS | MONGO DB</p>
-          <div class="buttons-01">
-            <a href="#proj-heading"><button>PROJECTS</button></a>
-            <a href="./documents/Edward Addo Boakye CV.pdf" target="_blank"><button id="resume">RESUME</button></a>
-            <a href="./documents/BSC COMP SCIENCE CERT.pdf" target="_blank"><button>CERTIFICATES</button></a>
-            
-          </div>
-          <div class="socials">
-            <a href="https://www.facebook.com/share/15noWVptNi/" class="fa fa-facebook" target="_blank"></a>
-            <a href="https://www.instagram.com/edwardaddoboakye?igsh=ZWR4ajk5eG55NTZi" class="fa fa-instagram" target="_blank"></a>
-            <a href="https://x.com/eboakye151" class="fa fa-twitter" target="_blank"></a>
-            <a href="https://www.linkedin.com/in/edward-addo-boakye1101/" class="fa fa-linkedin" target="_blank"></a>
-          </div>
+        <h1>Edward Addo Boakye</h1>
+        <h2>Web Developer in Accra, Ghana</h2>
+        <p>HTML | CSS | JAVASCRIPT | NODE JS | GIT | EXPRESS | MONGO DB</p>
+        <div class="buttons-01">
+          <a href="#proj-heading"><button>PROJECTS</button></a>
+          <a href="./documents/Edward Addo Boakye CV.pdf" target="_blank"
+            ><button id="resume">RESUME</button></a
+          >
+          <a href="./documents/BSC COMP SCIENCE CERT.pdf" target="_blank"
+            ><button>CERTIFICATES</button></a
+          >
+        </div>
+        <div class="socials">
+          <a
+            href="https://www.facebook.com/share/15noWVptNi/"
+            class="fa fa-facebook"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.instagram.com/edwardaddoboakye?igsh=ZWR4ajk5eG55NTZi"
+            class="fa fa-instagram"
+            target="_blank"
+          ></a>
+          <a
+            href="https://x.com/eboakye151"
+            class="fa fa-twitter"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/edward-addo-boakye1101/"
+            class="fa fa-linkedin"
+            target="_blank"
+          ></a>
+        </div>
       </div>
     </section>
     <section class="container-02">
       <!-- This is the second section -->
-       <div class="summary-image">
+      <div class="summary-image">
         <!-- professional image goes here -->
-       </div>
+      </div>
       <div class="summary-text">
         <h1 id="professional-summary">Professional Summary</h1>
-        <p>An IT professional with knowledge in Network infrastructure and security solutions. Experienced in using Adobe Photoshop and Illustrator for graphic design and multimedia content creation. Knowledge in HTML, CSS, JavaScript, and SQL for web application development.  Strong problem-solving, analytical, and communication skills with a customer-focused approach. Adept at working independently and collaboratively to deliver innovative IT and design solutions.</p>
+        <p>
+          An IT professional with knowledge in Network infrastructure and
+          security solutions. Experienced in using Adobe Photoshop and
+          Illustrator for graphic design and multimedia content creation.
+          Knowledge in HTML, CSS, JavaScript, and SQL for web application
+          development. Strong problem-solving, analytical, and communication
+          skills with a customer-focused approach. Adept at working
+          independently and collaboratively to deliver innovative IT and design
+          solutions.
+        </p>
       </div>
     </section>
     <section class="container-03">
@@ -63,63 +114,84 @@
           <div class="education-item">
             <div class="date">Feb 2025 - Present</div>
             <div class="content">
-                <h3>Web Development Trainee</h3>
-                <h4>Meltwater Entrepreneurial School of Technology, Accra </h4>
-                <p>HTML | VANILLA CSS | JAVASCRIPT | TAILWIND CSS | NODE JS | GIT | EXPRESS | MONGO DB 
-                  </p>
+              <h3>Web Development Trainee</h3>
+              <h4>Meltwater Entrepreneurial School of Technology, Accra</h4>
+              <p>
+                HTML | VANILLA CSS | JAVASCRIPT | TAILWIND CSS | NODE JS | GIT |
+                EXPRESS | MONGO DB
+              </p>
             </div>
-        </div>
-            <div class="education-item">
-                <div class="date">Sep 2020 - Nov 2022</div>
-                <div class="content">
-                    <h3>Bachelor of Science in Computer Science </h3>
-                    <h4>Kwame Nkrumah University of Science and Technology, Kumasi</h4>
-                    <p>Data Structures and Algorithms | Java | C++ | Network Architecture | Web Development | Advanced Databases | Human Computer Interactions | Operations Research | Project Management</p>
-                </div>
+          </div>
+          <div class="education-item">
+            <div class="date">Sep 2020 - Nov 2022</div>
+            <div class="content">
+              <h3>Bachelor of Science in Computer Science</h3>
+              <h4>
+                Kwame Nkrumah University of Science and Technology, Kumasi
+              </h4>
+              <p>
+                Data Structures and Algorithms | Java | C++ | Network
+                Architecture | Web Development | Advanced Databases | Human
+                Computer Interactions | Operations Research | Project Management
+              </p>
             </div>
-            <div class="education-item">
-                <div class="date">Sep 2015 - Oct 2018</div>
-                <div class="content">
-                    <h3>Higher National Diploma in Computer Science</h3>
-                    <h4>Accra Technical University, Accra </h4>
-                    <p>Computer Hardware & Electronics | Descrete Mathematics | Artificial Intelligence & Robotics | Databases | Networking in Linux | Web Development </p>
-                </div>
+          </div>
+          <div class="education-item">
+            <div class="date">Sep 2015 - Oct 2018</div>
+            <div class="content">
+              <h3>Higher National Diploma in Computer Science</h3>
+              <h4>Accra Technical University, Accra</h4>
+              <p>
+                Computer Hardware & Electronics | Descrete Mathematics |
+                Artificial Intelligence & Robotics | Databases | Networking in
+                Linux | Web Development
+              </p>
             </div>
-
+          </div>
         </div>
       </div>
       <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <div class="experience">
-      <h2 id="experiences">Experience</h2>
-      <div class="timeline">
+      <div class="experience">
+        <h2 id="experiences">Experience</h2>
+        <div class="timeline">
           <div class="experience-item">
-              <div class="date">Feb 2025 - Present</div>
-              <div class="content">
-                  <h3>Web Developent Trainee</h3>
-                  <h4>MEST Africa</h4>
-                  <p>Developing and optimizing web applications using HTML, CSS, JavaScript, Node Js, Express and MongoDB.</p>
-              </div>
+            <div class="date">Feb 2025 - Present</div>
+            <div class="content">
+              <h3>Web Developent Trainee</h3>
+              <h4>MEST Africa</h4>
+              <p>
+                Developing and optimizing web applications using HTML, CSS,
+                JavaScript, Node Js, Express and MongoDB.
+              </p>
+            </div>
           </div>
           <div class="experience-item">
-              <div class="date">Dec 2023 - Jan 2025</div>
-              <div class="content">
-                  <h3>Network Consultant & Sales Executive</h3>
-                  <h4>Otis Integrated Systems, Accra </h4>
-                  <p>Provided end-to-end cost-effective network solutions, including infrastructure, VoIP, IP surveillance, and security. Built trust with customers, recommended solutions, and secured purchases.</p>
-              </div>
+            <div class="date">Dec 2023 - Jan 2025</div>
+            <div class="content">
+              <h3>Network Consultant & Sales Executive</h3>
+              <h4>Otis Integrated Systems, Accra</h4>
+              <p>
+                Provided end-to-end cost-effective network solutions, including
+                infrastructure, VoIP, IP surveillance, and security. Built trust
+                with customers, recommended solutions, and secured purchases.
+              </p>
+            </div>
           </div>
 
           <div class="experience-item">
             <div class="date">Dec 2022 - Dec 2023</div>
             <div class="content">
-                <h3>IT Officer </h3>
-                <h4>Let’s Travel and Tours Ltd, Accra </h4>
-                <p>Installed, configured, and maintained IT hardware, software, and networks. Designed a one-page company website and supported social media marketing with graphic design flyers.
-                  </p>
+              <h3>IT Officer</h3>
+              <h4>Let’s Travel and Tours Ltd, Accra</h4>
+              <p>
+                Installed, configured, and maintained IT hardware, software, and
+                networks. Designed a one-page company website and supported
+                social media marketing with graphic design flyers.
+              </p>
             </div>
+          </div>
         </div>
       </div>
-    </div>
     </section>
     <!-- <section class="container-04">
       Project Gallery
@@ -138,161 +210,228 @@
         
       </div>
     </section> -->
-<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <section class="skills-container">
       <div id="proj-heading"><h1>My Projects</h1></div>
       <div class="skills-section">
-      <div class="grid-container">
-        
+        <div class="grid-container">
           <!-- Flip Cards -->
           <div class="flip-card">
-              <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                      <img src="./image/Adoba Farms Website.png" alt="Adoba Farms">
-                  </div>
-                  <div class="flip-card-back">
-                      <h3>Adoba Farms Website</h3>
-                      <p>This is a farm website developed by Edward Addo Boakye. It is a part of his maiden projects right after receiving 4 weeks of training from MEST Africa</p>
-                      <a href="https://adobafarms.netlify.app/" target="_blank"><button>View More</button></a>
-
-                  </div>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./image/Adoba Farms Website.png" alt="Adoba Farms" />
               </div>
+              <div class="flip-card-back">
+                <h3>Adoba Farms Website</h3>
+                <p>
+                  This is a farm website developed by Edward Addo Boakye. It is
+                  a part of his maiden projects right after receiving 4 weeks of
+                  training from MEST Africa
+                </p>
+                <a href="https://adobafarms.netlify.app/" target="_blank"
+                  ><button>View More</button></a
+                >
+              </div>
+            </div>
           </div>
 
           <div class="flip-card">
-              <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                      <img src="./image/Adoba Photography Website.png" alt="Adoba Photography">
-                  </div>
-                  <div class="flip-card-back">
-                      <h3>Adoba Photography</h3>
-                      <p>This ia a photography website. Its significance is to empower african photographers to be persistent and creative in their chosen field</p>
-                      <a href="https://adobaphotography.netlify.app/" target="_blank"><button>View More</button></a>
-                  </div>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="./image/Adoba Photography Website.png"
+                  alt="Adoba Photography"
+                />
               </div>
+              <div class="flip-card-back">
+                <h3>Adoba Photography</h3>
+                <p>
+                  This ia a photography website. Its significance is to empower
+                  african photographers to be persistent and creative in their
+                  chosen field
+                </p>
+                <a href="https://adobaphotography.netlify.app/" target="_blank"
+                  ><button>View More</button></a
+                >
+              </div>
+            </div>
           </div>
 
           <div class="flip-card">
-              <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                      <img src="./image/Edward's To-Do Website.png" alt="To do website">
-                  </div>
-                  <div class="flip-card-back">
-                      <h3>To-do list</h3>
-                      <p>A to-do list web app which allows you to add daily activities to be undertaken and remove them as soon as they are completed.</p>
-                      <a href="https://eddystodo-app.netlify.app/" target="_blank"><button>View More</button></a>
-                  </div>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="./image/Edward's To-Do Website.png"
+                  alt="To do website"
+                />
               </div>
+              <div class="flip-card-back">
+                <h3>To-do list</h3>
+                <p>
+                  A to-do list web app which allows you to add daily activities
+                  to be undertaken and remove them as soon as they are
+                  completed.
+                </p>
+                <a href="https://eddystodo-app.netlify.app/" target="_blank"
+                  ><button>View More</button></a
+                >
+              </div>
+            </div>
           </div>
 
           <div class="flip-card">
-              <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                      <img src="./image/Adoba Portfolio Website.png" alt="Portfolio Website">
-                  </div>
-                  <div class="flip-card-back">
-                      <h3>Portfolio</h3>
-                      <p>This is my portfolio website. Here, I showcase my personal web projects and helpful tips to aid beginners in the field of web development to gain inspiration and knowledge.</p>
-                      <a href="https://edwardaddoboakye.netlify.app/" target="_blank"><button>View More</button></a>
-                  </div>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img
+                  src="./image/Adoba Portfolio Website.png"
+                  alt="Portfolio Website"
+                />
               </div>
+              <div class="flip-card-back">
+                <h3>Portfolio</h3>
+                <p>
+                  This is my portfolio website. Here, I showcase my personal web
+                  projects and helpful tips to aid beginners in the field of web
+                  development to gain inspiration and knowledge.
+                </p>
+                <a href="https://edwardaddoboakye.netlify.app/" target="_blank"
+                  ><button>View More</button></a
+                >
+              </div>
+            </div>
           </div>
-      </div>
+        </div>
 
-      <!-- Rating Bar Section -->
-       <div class="rating-container">
-      <div class="rating">
-          <h2>Skills</h2>
-          <div class="rating-bar">
+        <!-- Rating Bar Section -->
+        <div class="rating-container">
+          <div class="rating">
+            <h2>Skills</h2>
+            <div class="rating-bar">
               <p>HTML</p>
               <div class="bar">
-                  <div class="fill html"></div>
+                <div class="fill html"></div>
               </div>
-          </div>
-          <div class="rating-bar">
+            </div>
+            <div class="rating-bar">
               <p>CSS</p>
               <div class="bar">
-                  <div class="fill css"></div>
+                <div class="fill css"></div>
               </div>
-          </div>
-          <div class="rating-bar">
+            </div>
+            <div class="rating-bar">
               <p>JavaScript</p>
               <div class="bar">
-                  <div class="fill js"></div>
+                <div class="fill js"></div>
               </div>
-          </div>
-          <div class="rating-bar">
+            </div>
+            <div class="rating-bar">
               <p>Node Js</p>
               <div class="bar">
-                  <div class="fill nodeJs"></div>
+                <div class="fill nodeJs"></div>
               </div>
-          </div>
-          <div class="rating-bar">
-            <p>Mongo DB</p>
-            <div class="bar">
-                <div class="fill mongoDb"></div>
             </div>
-        </div>
-        <div class="rating-bar">
-          <p>Express</p>
-          <div class="bar">
-              <div class="fill express"></div>
+            <div class="rating-bar">
+              <p>Mongo DB</p>
+              <div class="bar">
+                <div class="fill mongoDb"></div>
+              </div>
+            </div>
+            <div class="rating-bar">
+              <p>Express</p>
+              <div class="bar">
+                <div class="fill express"></div>
+              </div>
+            </div>
+            <div class="rating-bar">
+              <p>Git</p>
+              <div class="bar">
+                <div class="fill git"></div>
+              </div>
+            </div>
           </div>
-      </div>
-      <div class="rating-bar">
-        <p>Git</p>
-        <div class="bar">
-            <div class="fill git"></div>
         </div>
-    </div>
       </div>
-    </div>
-  </div>
-  </section>
+    </section>
     <section class="container-04">
-      
       <div class="contact-me">
         <h1 id="contact">Contact Me</h1>
         <form class="contact-me-form">
-          <input type="text" placeholder="Enter your full name" name="fullname" id="fullname" required>
-          <input type="email" placeholder="Enter your email" name="email" id="email" required>
-          <input type="text" placeholder="Enter your phone number" name="phone_number" id="phone_number" required>
+          <input
+            type="text"
+            placeholder="Enter your full name"
+            name="fullname"
+            id="fullname"
+            required
+          />
+          <input
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+            id="email"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Enter your phone number"
+            name="phone_number"
+            id="phone_number"
+            required
+          />
           <textarea placeholder="Enter your message here."></textarea>
           <button type="submit">Submit</button>
         </form>
-
       </div>
-       
     </section>
     <section class="container-05">
       <div class="home-address">
         <h1>My Address & Contact</h1>
-        <p>U123, Akushie Cl. Abavana Down,
-          Kotobabi, Greater-Accra, Ghana</p>
-          <p>Mobile Number: +233542025973</p>
+        <p>U123, Akushie Cl. Abavana Down, Kotobabi, Greater-Accra, Ghana</p>
+        <p>Mobile Number: +233542025973</p>
       </div>
       <div class="useful-links">
-      <h1>Useful links</h1>
-      <span><a href="#professional-summary">PROFESSIONAL SUMMARY</a></span>
-      <span><a href="#experiences">EXPERIENCES</a></span>
-      <span><a href="#proj-heading">PROJECT GALLERY</a></span>
-      <span><a href="#contact">CONTACT ME</a></span>
-      <span><a href="./documents/Edward Addo Boakye CV.pdf">RESUME</a></span>
-      <span><a href="./documents/BSC COMP SCIENCE CERT.pdf" target="_blank">CERTIFICATE</a></span>
+        <h1>Useful links</h1>
+        <span><a href="#professional-summary">PROFESSIONAL SUMMARY</a></span>
+        <span><a href="#experiences">EXPERIENCES</a></span>
+        <span><a href="#proj-heading">PROJECT GALLERY</a></span>
+        <span><a href="#contact">CONTACT ME</a></span>
+        <span><a href="./documents/Edward Addo Boakye CV.pdf">RESUME</a></span>
+        <span
+          ><a href="./documents/BSC COMP SCIENCE CERT.pdf" target="_blank"
+            >CERTIFICATE</a
+          ></span
+        >
       </div>
       <div class="socials-below">
         <h1>Follow me</h1>
         <div>
-          <a href="https://www.facebook.com/share/15noWVptNi/" class="fa fa-facebook" target="_blank"></a>
-          <a href="https://www.instagram.com/edwardaddoboakye?igsh=ZWR4ajk5eG55NTZi" class="fa fa-instagram" target="_blank"></a>
-          <a href="https://x.com/eboakye151" class="fa fa-twitter" target="_blank"></a>
-          <a href="https://www.linkedin.com/in/edward-addo-boakye1101/" class="fa fa-linkedin" target="_blank"></a>
+          <a
+            href="https://www.facebook.com/share/15noWVptNi/"
+            class="fa fa-facebook"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.instagram.com/edwardaddoboakye?igsh=ZWR4ajk5eG55NTZi"
+            class="fa fa-instagram"
+            target="_blank"
+          ></a>
+          <a
+            href="https://x.com/eboakye151"
+            class="fa fa-twitter"
+            target="_blank"
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/edward-addo-boakye1101/"
+            class="fa fa-linkedin"
+            target="_blank"
+          ></a>
         </div>
-        </div>
-      
+      </div>
     </section>
     <footer class="foot-section">
-      <p>Copyright &copy; 2025 All rights reserved. This website was designed by Edward Addo Boakye.</p>
+      <p>
+        Copyright &copy; 2025 All rights reserved. This website was designed by
+        Edward Addo Boakye.
+      </p>
     </footer>
   </body>
 </html>
